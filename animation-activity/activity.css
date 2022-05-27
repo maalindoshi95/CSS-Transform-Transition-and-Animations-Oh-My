@@ -28,16 +28,27 @@ nav {
 }
 
 @keyframes top {
-  from {}
-  to {}
+  from {transform: rotate(0deg);
+        top: 0px;
+        left: 0px;
+  }
+  to {transform: rotate(45deg);
+      top: 20px;
+      left: 20px;
+  }
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  from {display: block;}
+  to {display: none;}
 }
 
 @keyframes bottom {
   from {}
   to {}
+}
+
+#top{
+  animation-name: top;
+  animation-duration: 1s;
 }
